@@ -32,3 +32,12 @@ npm start
 ```
 
 Then open `http://localhost:3000`
+
+## Host it online
+
+The repository includes `render.yaml` for a simple Render web-service deploy.
+Connect the GitHub repository in Render, choose the `main` branch, and create the service.
+Render will run `npm start` and provide a public URL.
+
+This is a demonstration app, so its JSON progress file is suitable for a temporary demo. A production version would use a database for permanent shared state.
+
