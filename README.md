@@ -1,43 +1,41 @@
-# Primeform VMC Operator HMI Assignment
+# VMC Operator HMI
 
-This is a small Node.js web app with a React frontend for a single VMC operator workflow.
-It guides the operator through machine checks, required tools, workpiece setup, ready review, and a simple operation start/stop flow.
+A simple React and Node.js web app for a simulated VMC machine startup workflow.
 
-## Folder structure
+The operator completes the required checks, confirms the tools and workpiece setup, reviews the job, and then starts or stops the simulated operation.
 
-- `server.js` - Node server, API routes, and static file serving
-- `data/state.json` - mock job data and saved operator progress
-- `build-client.js` - bundles the React UI into `public/app.js`
-- `src/app.jsx` - React frontend source
-- `public/index.html` - page structure
-- `public/styles.css` - responsive HMI styling
-- `public/app.js` - built React bundle
+## Live Demo
 
-## How it works
+https://primeform-vmc-operator-hmi.onrender.com
 
-The app loads one mock machining job and guides the operator through:
+## Main Features
 
-1. Machine checks
-2. Required tools
-3. Workpiece setup
-4. Ready review
-5. Operation
+- Machine readiness checklist
+- Required tool confirmation
+- Workpiece setup confirmation
+- Ready review before operation
+- Start, stop, and reset controls
+- Progress saved in a local JSON file for the demo
 
-The operator confirms each item. The app only allows moving to the next stage when the current stage is complete.
-
-## Run locally
+## Run Locally
 
 ```bash
+npm install
 npm start
 ```
 
-Then open `http://localhost:3000`
+Open http://localhost:3000
 
-## Host it online
+## Built With
 
-The repository includes `render.yaml` for a simple Render web-service deploy.
-Connect the GitHub repository in Render, choose the `main` branch, and create the service.
-Render will run `npm start` and provide a public URL.
+- React
+- Node.js
+- HTML and CSS
+- JSON file for demo state
 
-This is a demonstration app, so its JSON progress file is suitable for a temporary demo. A production version would use a database for permanent shared state.
+## Project Structure
 
+- `src/app.jsx` - React interface
+- `server.js` - Node.js server and API routes
+- `data/state.json` - Mock job data and operator progress
+- `public/styles.css` - Page styling
