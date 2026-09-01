@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: primeform-vmc-operator-hmi
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+
