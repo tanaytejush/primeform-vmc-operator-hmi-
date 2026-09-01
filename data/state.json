@@ -1,0 +1,97 @@
+{
+  "job": {
+    "jobId": "JOB-1001",
+    "operationName": "Face Milling - Top Surface",
+    "quantity": 24,
+    "material": "Aluminium 6061",
+    "drawingRevision": "REV-B",
+    "cncProgramRevision": "O1200 REV-3",
+    "fixture": "Vise with soft jaws",
+    "workOffset": "G54",
+    "orientation": "Top face upward, datum edge against fixed jaw",
+    "clampInstruction": "Seat part fully, tighten evenly, verify no rocking"
+  },
+  "machineChecks": [
+    {
+      "id": "power-control",
+      "label": "Power and control available",
+      "confirmed": false
+    },
+    {
+      "id": "estop",
+      "label": "E-stop released",
+      "confirmed": false
+    },
+    {
+      "id": "door-guard",
+      "label": "Guard and machine door closed",
+      "confirmed": false
+    },
+    {
+      "id": "alarm",
+      "label": "No active alarm",
+      "confirmed": false
+    },
+    {
+      "id": "coolant",
+      "label": "Lubrication and coolant ready",
+      "confirmed": false
+    },
+    {
+      "id": "reference-return",
+      "label": "Reference return complete",
+      "confirmed": false
+    }
+  ],
+  "tools": [
+    {
+      "id": "tool-1",
+      "toolNumber": "T01",
+      "toolType": "Face Mill",
+      "confirmed": false
+    },
+    {
+      "id": "tool-2",
+      "toolNumber": "T02",
+      "toolType": "6 mm Drill",
+      "confirmed": false
+    },
+    {
+      "id": "tool-3",
+      "toolNumber": "T03",
+      "toolType": "10 mm End Mill",
+      "confirmed": false
+    }
+  ],
+  "workpieceSetup": [
+    {
+      "id": "fixture",
+      "label": "Fixture: Vise with soft jaws",
+      "confirmed": false
+    },
+    {
+      "id": "orientation",
+      "label": "Orientation: Top face upward, datum edge against fixed jaw",
+      "confirmed": false
+    },
+    {
+      "id": "clamp",
+      "label": "Clamping: Seat part fully, tighten evenly, verify no rocking",
+      "confirmed": false
+    },
+    {
+      "id": "material-revision",
+      "label": "Material and drawing revision verified",
+      "confirmed": false
+    },
+    {
+      "id": "work-offset",
+      "label": "Work offset set to G54",
+      "confirmed": false
+    }
+  ],
+  "appState": {
+    "activeStage": "machine-checks",
+    "operationStatus": "READY"
+  }
+}
