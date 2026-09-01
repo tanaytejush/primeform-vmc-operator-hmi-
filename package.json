@@ -1,5 +1,5 @@
 {
-  "name": "primeform-vmc-hmi",
+  "name": "primeform-vmc-operator-hmi",
   "version": "1.0.0",
   "private": true,
   "description": "Simple VMC operator HMI assignment with a React frontend",
@@ -15,3 +15,4 @@
     "esbuild": "^0.28.2"
   }
 }
+
