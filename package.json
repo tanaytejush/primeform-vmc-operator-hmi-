@@ -2,8 +2,16 @@
   "name": "primeform-vmc-hmi",
   "version": "1.0.0",
   "private": true,
-  "description": "Simple VMC operator HMI assignment",
+  "description": "Simple VMC operator HMI assignment with a React frontend",
   "scripts": {
-    "start": "node server.js"
+    "build": "node build-client.js",
+    "start": "npm run build && node server.js"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
   }
 }
