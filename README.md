@@ -39,3 +39,8 @@ Open http://localhost:3000
 - `server.js` - Node.js server and API routes
 - `data/state.json` - Mock job data and operator progress
 - `public/styles.css` - Page styling
+
+
+---
+
+<sub>Made by [tanaytejush](https://github.com/tanaytejush)</sub>
